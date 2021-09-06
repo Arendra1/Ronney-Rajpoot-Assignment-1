@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html {
+  min-height: max-content;
+  border-left: 2.2rem solid #F3E1E1;
+  border-bottom: 2.2rem solid #F3E1E1;
+  overflow-x: hidden;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  min-height: max-content;
+
+}
+
+/* Content Section */
+.content {
+  width: 50vw;
+}
+
+.spann {
+  color: #000000;
+  font-family: "Patua One", cursive;
+}
+h1 {
+  color:  #7D5A5A;
+  margin-top: -0.4rem;
+  font-family: "Patua One", cursive;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+  margin: 1.5rem 2.4rem;
+  color: #000000;
+  font-size: 1.55rem;
+  font-weight: bold;
+  font-family: "Patua One", cursive;
+}
+
+nav ul li:hover {
+  color: #7D5A5A;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.heading:hover {
+  color: #000000;
+}
+.heading:hover .spann {
+  color: #7D5A5A;
+}
+
+.spann:hover {
+  color: #7D5A5A;
+}
+.home:hover {
+  color: #7D5A5A;
+}
+
+.about {
+  color: #7D5A5A;
+}
+.about:hover{
+  color:  #000000;
+
+}
+
+/* Container Section */
+
+
+
+
+#container .sample {
+  font-size: 3rem;
+  color: #7D5A5A;
+  margin: 5rem 2.4rem;
+  margin-top: .8rem;
+  font-family: "Noto Sans JP", sans-serif;
+  
+}
+
+#container .sample span {
+  color: #2B2B2B;
+}
+.middle p {
+  width: 23vw;
+  font-size: 1.8rem;
+  color: #171717;
+  margin: 0rem 2.4rem;
+  margin-top: -3rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.middle p span {
+  color:  #7D5A5A;
+}
+
+.middle button {
+  height: 7vh;
+  width: 8vw;
+  font-size: .89rem;
+  font-weight: bolder;
+  margin-left: 2.4rem;
+  margin-top: 3.5rem;
+}
+
+.btn1 {
+  color: #f9f9f9;
+  background-color: #000000;
+  border: 2px solid #7D5A5A;
+  box-sizing: border-box;
+
+  
+}
+
+.btn1:hover {
+  color: #000000;
+  background-color:#f9f9f9;
+  font-weight: bolder;
+  border: 2px solid #7D5A5A;
+  cursor: pointer;
+}
+
+.btn2 {
+  color:#000000 ;
+  background-color: #f9f9f9;
+  border: 2px solid #7D5A5A;
+  font-family: "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
+}
+
+.btn2:hover {
+  color:#f9f9f9;
+  background-color:#000000;
+  font-weight: bolder ;
+  border: 2px solid #7D5A5A;
+  cursor: pointer;
+}
+
+/* Hexagon Section */
+
+.hexagon {
+  height: 100vh;
+  width: 50vw;
+}
+
+.imege {
+  width: 35vw;
+  height: 58vh;
+}
+
+.shape1 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 58vh;
+  width: 35vw;
+  /* background: #7D5A5A; */
+  margin: 1px 50px;
+  margin-left: -9rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.shape1 .contente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg,#000000, #171717 );
+  color: #f7f6f2;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.shape1:hover {
+  cursor: pointer;
+  transform: translateY(-2rem);
+  transform: translateX(2rem);
+  z-index: 15;
+}
+.shape1:hover .contente {
+  opacity: 1;
+}
+
+.shape2 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 58vh;
+  width: 35vw;
+  margin: -11.7rem 11rem;
+  margin-top: -17rem;
+  position: relative;
+  top: -14rem;
+  left: 1.8rem;
+  z-index: 1;
+}
+.shape2 .contente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg,#000000, #171717 );
+  color: #f7f6f2;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.shape2:hover {
+  cursor: pointer;
+  transform: translateY(2rem);
+  transform: translateX(0.2rem);
+  z-index: 15;
+}
+
+.shape2:hover .contente {
+  opacity: 1;
+}
+
+.shape3 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 58vh;
+  width: 35vw;
+  margin: 50px, 50px;
+  position: relative;
+  top: -4rem;
+  left: 9rem;
+  z-index: 3;
+}
+.shape3 .contente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg,#000000, #171717 );
+  color: #f7f6f2;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.shape3:hover {
+  cursor: pointer;
+  transform: translateY(-2rem);
+  transform: translateX(2rem);
+  z-index: 15;
+}
+
+.shape3:hover .contente {
+  opacity: 1;
+}
+
+/* BOX section */
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  margin-left: 2.4rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+
+  padding: 1rem;
+  min-height: max-content;
+ 
+
+
+}
+
+.read {
+  text-decoration: none;
+  color: #7D5A5A;
+}
+.box1 {
+  height: 30vh;
+  width: 33vw;
+  display: flex;
+}
+
+.box1 .hexagon1 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 10vh;
+  width: 19vw;
+  background-color: #7952B3;
+  margin-right: 0.8rem;
+}
+
+.box2 {
+  height: 30vh;
+  width: 33vw;
+  display: flex;
+}
+
+.box2 .hexagon2 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 10vh;
+  width: 19vw;
+  background-color: #7D5A5A;
+  margin-right: 0.8rem;
+}
+.box3 {
+  height: 30vh;
+  width: 33vw;
+  display: flex;
+}
+
+.box3 .hexagon3 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  height: 10vh;
+  width: 19vw;
+  background-color:   #0C4271;
+  margin-right: 0.8rem;
+}
+
+/* Client Section */
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: max-content;
+
+}
+.clients h3 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem;
+  margin-left: 2.4rem;
+  margin-top: -6rem;
+  margin-bottom: -1rem;
+  color:#7D5A5A;
+  font-weight: bold;
+  font-family: "Patua One", cursive;
+}
+
+.symbols {
+  display: flex;
+  margin: 2rem 0.2rem 2rem 1rem;
+  flex-wrap: wrap;
+}
+
+.clients .symbols img {
+  width: 10vw;
+  height: 10vh;
+  padding: 0px 1rem;
+  margin: 1rem 0;
+}
